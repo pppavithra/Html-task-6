@@ -1,0 +1,578 @@
+question1:
+code:index.html
+
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+                <h1>guvi</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div>
+                Guvi Geek Network
+            </div>
+    </div>        
+    </body>
+    </html>
+Solution:It above code modified input <h1>tag added and division part is closed.
+
+question 2:
+code:index.html
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+                <h1>guvi</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div>
+                Guvi Geek Network
+            </div>
+    </div>        
+    </body>
+    </html>
+    
+question3:
+code:index.html
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Contact Us Form  | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Surkhet, NP12</div>
+          <div class="text-two">Birendranagar 06</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">codinglab@gmail.com</div>
+          <div class="text-two">info.codinglab@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
+code:-------style.css-------
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+Description:create a html page in contactus form required all filed in using fullname,message any query to that website collect whole details, CSS style part in view visible page.
+
+question4:
+code:index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <div>
+     <ul>
+      <li>Programming Language
+      <ul>
+       <li>Javascript
+       <ol type="a">
+       <li>Angular</li>
+       <li>React</li>
+       <li>Vue.js</li>
+      </ol>
+       </li>
+        <li>Python
+        <ol type="a">
+          <li>Django Framework</li>
+          <li>Flask Framework</li>
+        </ol>
+        </li>
+          <li>Database
+          <ol type="a">
+          <li>Spring</li>
+          <li>Maven</li>
+          <li>Hibernate</li>
+         </li>
+            </ul>
+            </li>
+          <li>Database
+          <ul>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>Cansandra</li>
+            </ul>
+            </li>
+        </ul>
+    </div>   
+</body>
+</html>
+Description : It create list of using nested (ordered and unordered list)html element tag used in <ul>,<ol>,<li><div> part to separate view list.
+
+question5:
+code:index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Check out <a href="https://google.com"target="_blank" rel="noopener noreferrer">google search</a>.</p>
+</body>
+</html>
+Description: new tab create using <a></a> anchor tag click url then go separate page at open.
+
+question 6:
+code:index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+           <label for="employee_type">Employee Type :</label>
+           <input type="radio" name="sal">Salaried</in
+           <input type="radio" name="self">Self employed</input>
+        </div>
+        </form>
+</body>
+</html>
+Description: In form using radio button in grouping part click all type filed in input type.
+
+question 7:
+code:---index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <form action="https:\\google.com" method="GET">
+        <p>Yes! I want to subscribe to  <i>Mag-O-Zine</i></p>
+        <div id="l1">
+            <input type="text" placeholder="First name"/>
+            <input type="text" placeholder="last name"/>
+        </div>
+        <div id="l2">
+            <input type="text" placeholder="Address"/>
+        </div>
+        <div id="l3">
+            <input type="text" placeholder="City"/>
+            <input type="text" placeholder="State"/>
+            <input type="number" placeholder="Zip"/>
+        </div>
+        <div id="l4">
+            <label for="subscription">Subscribe for :</label>
+            <input type="checkbox"/>1 year($19.95) 
+            <input type="checkbox"/>2 years($35.00)
+        </div>
+        <div id="l5">
+            Send me more information about:
+            <br>
+            <input type="checkbox"/>Computer-Zine 
+            <br>
+            <input type="checkbox"/>Fishing-Zine 
+            <br>
+            <input type="checkbox"/>Cat-O-Zine   
+        </div>
+    </form>
+    </div> 
+</body>
+</html>
+--------style.css-------
+body{
+    background-color: black;
+    color: black;
+}
+.container{
+    border: 2px solid rgb(252, 239, 239);
+    margin: 300px auto;    
+    max-width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    
+}
+div, div > input{
+    padding: 0.5rem;
+}
+
+p{
+    background-color: red;
+    color: rgb(248, 244, 244);
+    font-family: cursive;
+    margin: auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+form{
+    background-color: rgb(248, 244, 244);
+}
+
+.l1{
+    min-width: 50%;
+}
+.l2{
+    min-width: 100%;
+}
+Description:create the subscribe any website to all information collect daily update so that form fill user details filed should added.
+
+question 8:
+code:----index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    td, th{
+        min-width: 115px;
+    }
+    </style>
+    <title>Tables</title>
+</head>
+<body>
+    <header>Health Chart</header> 
+    
+    <table border="5" bordercolor="green" box-align="center">
+        <tr>
+            <th>State of Health</th>
+            <th colspan="2">Fasting Value
+                <table>
+                    <tr>
+                        <th colspan="1">Minimum</th>
+                        <th colspan="1">Maximum</th>
+                    </tr>
+                </table>    
+            </th>
+            <th colspan="1">After eating
+                <table>
+                    <tr>
+                        <td>2 hours after eating</td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>    
+    </table>
+</body>
+</html>
+Description : create table tag using row and column filed added ,colspan is create how many column gap should minimum ,maximum then table date,formed whole healthy chart table .
+
+Question 9:
+code:index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https:\\google.com" method="GET">
+        <label for="first_name">First Name : </label>
+        <input type="text" placeholder="First Name" value="first"/>
+        <br>
+        <label for="last_name">Last Name : </label>
+        <input type="text" placeholder="Last Name" value="last"/>
+        <br>
+        <label for="DOB">DOB : </label>
+        <input type="date" placeholder="Date of birth" value="01/01/2999"/>
+        <br>
+        <label for="Address">Address : </label>
+        <textarea cols="30" rows="5" name="address_details" placeholder="Enter your full address here"></textarea>
+        <button name="submit">Submit the form</button>
+        <br>
+        <div>
+            <label for="employee_type">Employee Type :</label>
+            <input type="radio" name="sal">Salaried</input>
+            <input type="radio" name="self">Self employed</input>
+        </div>
+    </form>
+</body>
+</html>
+Description : create a form to default value added user then submit to all required other page will open to stored in all filed details.
+
+Question 10:
+code:index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <mark>HTML & CSS is awesome</mark>
+     </div>  
+</body>
+</html>
+Description : create a html page to <mark>tag using highlight the text view .
+
+Question 11:
+code:index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All types of input elements</title>
+</head>
+<body>
+    <div>
+    <ul>Types of Inputs
+        <li><input type="button" value="button"/></li>
+        <li>Checkbox<input type="checkbox" value=""/></li>
+        <li>Color<input type="color"/></li>
+        <li>Date<input type="date"/></li>
+        <li>datetime<input type="datetime"/></li>
+        <li>datetime-local<input type="datetime-local"/></li>
+        <li>email<input type="email"/></li>
+        <li>file<input type="file"/></li>
+        <li>image<input type="image"/></li>
+        <li>hidden<input type="hidden"/></li>
+        <li>month<input type="month"/></li>
+        <li>password<input type="password"/></li>
+        <li>radio:<input type="radio"/></li>
+        <li>reset<input type="reset"/></li>
+        <li>range<input type="range"/></li>
+        <li>search<input type="search"/></li>
+        <li>text<input type="text"/></li>
+        <li>url<input type="url"/></li>
+        <li>week<input type="week"/></li>
+        <li>tel<input type="tel"/></li>
+    </ul>
+</div>
+</body>
+</html>
+description: It create all type of input elements in html page using different type of input action provide in one page.
+
+
+
+
+
